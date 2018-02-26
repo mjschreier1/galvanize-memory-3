@@ -1,4 +1,4 @@
-## Galvanize Memory
+## Galvanize Memory 
 
 You're making an API that can list, create, read, update, and delete a collection of games. The problem is that you're missing a critical part of the API-- the database! Create a database for this API, and interface with it via [Knex.js](https://knexjs.org).
 
@@ -68,4 +68,4 @@ Deploy this API. Note that you'll need to create a remote database, run your mig
 
 * You can test your API locally with `npm test`
 
-Add a link to your [deployed API]() here.
+Add a link to your [deployed API](http://galvanize-memory-3.herokuapp.com/games) here.

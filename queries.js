@@ -8,11 +8,12 @@ module.exports = {
         return database.select("*").from("games").where("id", id).first();
     },
     create(game){
-        return database("games").create(game, "*");
+        return database("games").insert(game, "*")
+            .then(record => record[0]);
     },
     update(id, game){
         return database.select("*").from("games").where("id", id)
-            .update("game", game, "*");
+            .update(game, "*");
     },
     delete(id){
         return database.select("*").from("games").where("id", id).del();
